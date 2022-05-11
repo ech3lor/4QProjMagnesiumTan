@@ -273,7 +273,7 @@ textarea{
 
 
 
-/*"if statement to change to PC layout (default is mobile)"*/
+/*if statement to change to PC layout (default is mobile)*/
 @media only screen and (min-width: 750px){
 	header#sidebar {width: 350px; height:100%; white-space:normal; left:0; top:0; transition: left 0.5s;}
 	section#main {margin-left: 350px; margin-top:0px; transition: margin-left 0.5s;}
