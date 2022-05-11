@@ -122,6 +122,9 @@ header#sidebar nav ul li{
 
 header#sidebar nav ul li a{
 	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
 	color: white;
 	position: center;
 
