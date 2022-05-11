@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Once Upon A Crowd</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="TAN, Isaac John S.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/weblayout.css">
+	
+</head>
+<body class="homepage" onload="fixSidebar()">
+<header id="sidebar">
+	<h1><a href="../index.html">Once Upon A Crowd</a></h1>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Homepage</a></li>
+			<li><a href="page1.html">Story One</a></li>
+			<li><a href="page2.html">Story Two</a></li>
+		</ul>
+	
+	</nav>
+	<button id="sidebarbtn" onclick="closeSidebar();">close navigation</button>
+</header>
+<section id="main">
+<h1> Contribute </h1>
+	<div id="text">
+			<form id="form">
+				<fieldset class="page">
+					<fieldset>
+						<legend> About The Author</legend>
+						<label for="name">Pen Name:</label><br>
+						<input name="fname" type="text" placeholder="Pen Name" oninput="this.className = ''"> <br>
+					</fieldset>
+					<fieldset>
+						<legend> Location Location Location </legend>
+						<label for="storylocation">What story would you like to contribute to?</label><br>
+							<select id="storylocation" name="storylocation" oninput="this.className = ''">
+							<option value=""></option>
+							<option value="0">Story One</option>
+							<option value="1">Story Two</option>
+						</select>					
+					</fieldset>
+					<input type="reset">
+					
+				</fieldset>
+				<fieldset class="page">
+					<legend>Write Your Story</legend>
+					<textarea name="story" id="story" rows="10" cols="50" required></textarea> <br>
+					<label for="anonymous">Would you like your pen name to be visible in the list of contributors for this story?</label>
+					<select id="anonymous" name="anonymous" oninput="this.className = ''">
+						<option value=""></option>
+						<option value="0">no</option>
+						<option value="1">yes</option>
+					</select>
+					<br>
+					<input type="reset">
+				</fieldset>
+				<div id="trackerholder">
+					<div id="buttonholder">
+						<button type="button"id="previous"onclick="turnPage(-1)">Previous</button> 
+					
+						<button type="button" id="next"onclick="turnPage(1)">Next</button>
+						
+					</div>
+					<p id="pagenumber">Page 1 of 2</p>
+				</div>
+			</form>
+	</section>
+</section>
+
+
+
+
+</body>
+<script src="../scripts/layoutchange.js"></script>
+<script src="../scripts/formManager.js"></script>
+
+
+</html>
