@@ -1,0 +1,284 @@
+/*text-size rules*/
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Times New Roman";
+}
+
+label, legend, input, textarea{
+	font-family: "Times New Roman";
+}
+
+label, legend{
+	font-weight: bold;
+}
+
+a, li, p, legend{
+	font-size: 26px;
+}
+
+label{
+	font-size: 22px:
+}
+
+button{
+	font-size: 24px:
+}
+
+input, textarea {
+	font-size: 16px;
+	
+}
+
+a, li{
+	font-family: "Times New Roman";
+}
+
+/*body stuff*/
+body{
+	background: url("../mmfiles/bookshelf.jpg") no-repeat 0 0;
+	background-attachment: fixed;
+	
+}
+
+/*header stuff*/
+header#sidebar {
+	background-color: rgba(0,0,0,0.9);
+	white-space: nowrap;
+	color: white;
+	position: fixed;
+	height: 80px;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: 1;
+	overflow-y: hidden;
+	overflow-x: auto;
+	transition: top 0.5s;
+	-ms-overflow-style: none;
+	scrollbar-width: none; 
+	
+
+}
+
+header#sidebar::-webkit-Scrollbar{
+	display:none;
+
+}
+
+header#sidebar>a:visited{
+	color: white;
+}
+ 
+header#sidebar>a:active{
+	background-color: #717171;
+}
+
+header#sidebar h1{
+	opacity: 1;
+	display: inline;
+	margin-left: 10px;
+}
+
+header#sidebar nav{
+	display: inline;
+	opacity: 1;
+	
+	
+}
+
+header#sidebar>h1 a{
+	font-family: Headers;
+	font-size: 28px;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+
+}
+
+header#sidebar nav ul{
+	list-style-type: none;
+	display: inline;
+}
+
+header#sidebar nav ul li{
+	display: inline-block;
+	padding-bottom: 10px;
+	border-left: 2px solid white;
+
+}
+
+
+header#sidebar nav ul li a{
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	color: white;
+	position: center;
+	opacity: 1;
+
+}
+
+header#sidebar nav ul li a:visited, body.homepage nav ul li a:visited{
+	text-decoration: none;
+	color: white;
+	opacity: 1;
+}
+
+header#sidebar nav ul li a:hover, body.homepage nav ul li a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+	opacity: 1;
+
+}
+
+/*where all the text in the body goes*/
+section#main{
+	margin-left: 0px;
+	margin-top: 80px;
+	transition: margin-top 0.5s;
+	text-align: center;
+}
+
+section#main > h1, section#main > h2{
+	padding: 30px;
+	color: white;
+	font-size: 64px;
+	
+}
+
+section#main > h2{
+	font-size: 56px;
+}
+
+ #text, #welcometext{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 5px;
+	background-color: rgba(235,235,235,0.7);
+	max-width: 600px;
+}
+
+#storystats {
+	border: 1px solid black;
+	width: 100%;
+	max-width: 500px;
+	position: center;
+	margin: auto;
+	padding-left:20px;
+	padding-right: 20px;
+}
+
+#storystats ul{
+	list-style-type: none;
+	padding: 0;
+	
+	
+}
+
+#storystats ul li{
+	font-family: Georgia;
+	font-size: 20px;
+}
+
+#storystats ul li strong{
+	font-weight: bold;
+	font-size: 20px;
+}
+/*button in sidebar*/
+header#sidebar button#sidebarbtn{
+	position: sticky;
+	float: left;
+	left:0;
+	top:70%;
+	background-color: rgba(0,0,0,0.2);
+	width: 100%;
+	height: 25px;
+	border: none;
+	overflow-x: hidden;
+	color: white;
+	cursor: pointer;
+
+}
+
+header#sidebar button#sidebarbtn:hover{
+
+  background-color: #222222;
+
+}
+
+/*--form styling--*/
+
+form{ 
+	padding: 15px;
+}
+
+fieldset{
+	margin-bottom: 10px;
+}
+
+#trackerholder p#pagenumber, #trackerholder button{
+	font-size: 20px;
+	display: inline-block;
+}
+
+#trackerholder p#pagenumber{
+	width: 100%;
+}
+
+#trackerholder button, input[type="reset"]{
+	border: none;
+	background: #888888;
+	font-family:formheadings;
+	color: black;
+	display: inline;
+}
+
+#trackerholder button:hover, input[type="reset"]:hover{
+	background: #444444;
+	color: white;
+}
+
+button#previous{
+	float: left;
+	z-index: 1;
+}
+
+button#next{
+	float: right;
+}
+
+fieldset.page{
+	display:none;
+}
+
+textarea{
+	resize: none;
+	overflow: auto;
+}
+.invalid{
+	border: 2px solid red;
+}
+
+
+
+
+/*"if statement to change to PC layout (default is mobile)"*/
+@media only screen and (min-width: 750px){
+	header#sidebar {width: 350px; height:100%; white-space:normal; left:0; top:0; transition: left 0.5s;}
+	section#main {margin-left: 350px; margin-top:0px; transition: margin-left 0.5s;}
+	header#sidebar button#sidebarbtn {position: absolute; left:93%; top:0; width:25px; height:100%; float: none;}
+	header#sidebar h1 a{display: block; margin-left: 20px; font-size: 48px;}
+	header#sidebar nav ul li{display: block; margin-left: 20px;padding-left:10px;}
+	header#sidebar nav ul li a {font-size: 36px;}
+	section#main p#text {margin-left:30px; margin-right:30px;}
+	
+
+}
+
+
